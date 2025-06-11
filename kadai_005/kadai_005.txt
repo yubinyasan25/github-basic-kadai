@@ -1,5 +1,11 @@
-PS C:\Users\yubin> #任意のディレクトリに移動する
-PS C:\Users\yubin> cd　\Users\yubin\OneDrive\デスクトップ
+PS C:\Users\yubin> # 任意のディレクトリに移動する
+PS C:\Users\yubin> cd　\Users\yubin\OneDrive\デスクトップ 
+PS C:\Users\yubin\OneDrive\デスクトップ> # カレントディレクトリにgit_challenge を作成する
+PS C:\Users\yubin\OneDrive\デスクトップ> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\yubin\OneDrive\デスクトップ
+
 PS C:\Users\yubin\OneDrive\デスクトップ> # カレントディレクトリにgit_challenge を作成する
 PS C:\Users\yubin\OneDrive\デスクトップ> mkdir git_challenge
 
@@ -9,23 +15,25 @@ PS C:\Users\yubin\OneDrive\デスクトップ> mkdir git_challenge
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
-d-----        2025/06/10     22:05                git_challenge
+d-----        2025/06/11     10:07                git_challenge
 
 
 PS C:\Users\yubin\OneDrive\デスクトップ> #作成したgit_challengeディレクトリに移動する
 PS C:\Users\yubin\OneDrive\デスクトップ> cd git_challenge
-PS C:\Users\yubin\OneDrive\デスクトップ\git_challenge> #カレントディレクトリにローカルリポジトリを新規作成する
+PS C:\Users\yubin\OneDrive\デスクトップ\git_challenge> #カレント ディレクトリにローカルリポジトリを新規作成する
 PS C:\Users\yubin\OneDrive\デスクトップ\git_challenge> git init
 Initialized empty Git repository in C:/Users/yubin/OneDrive/デスクトップ/git_challenge/.git/
+PS C:\Users\yubin\OneDrive\デスクトップ\git_challenge> echo "Hello,world!" > hello_world.txt
 PS C:\Users\yubin\OneDrive\デスクトップ\git_challenge> git add hello_world.txt
 PS C:\Users\yubin\OneDrive\デスクトップ\git_challenge> git commit -m "hello_world.txtを追加"
-[main (root-commit) 07340c8] hello_world.txtを追加
- 1 file changed, 1 insertion(+)
+[main (root-commit) f0bf3a0] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 hello_world.txt
+PS C:\Users\yubin\OneDrive\デスクトップ\git_challenge> echo "Hello,world!　こんにちは、世界!" > hello_world.txt
 PS C:\Users\yubin\OneDrive\デスクトップ\git_challenge> git add hello_world.txt
 PS C:\Users\yubin\OneDrive\デスクトップ\git_challenge> git commit -m "日本語訳を追記"
-[main acb11b9] 日本語訳を追記
- 1 file changed, 2 insertions(+), 1 deletion(-)
+[main c019757] 日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
 PS C:\Users\yubin\OneDrive\デスクトップ\git_challenge> git log --oneline
-acb11b9 (HEAD -> main) 日本語訳を追記
-07340c8 hello_world.txtを追加
+c019757 (HEAD -> main) 日本語訳を追記
+f0bf3a0 hello_world.txtを追加
